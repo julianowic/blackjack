@@ -1,15 +1,7 @@
-import {useEffect, useState} from 'react'
+import {useState} from 'react'
 
-export default function Card({card, handleAceSet, setTotal}){
-    const [x, setX] = useState(false)
-
-    useEffect(() => {
-        if(x){
-        console.log("use effect called")
-        setTotal(0)
-        }
-        setX(false)
-    }, [setX, setTotal, x])
+export default function Card({card, handleAceSet, setTotal, ace, setAce}){
+    const [click, setClick] = useState(false)
 
     return (
         <div>
@@ -19,10 +11,10 @@ export default function Card({card, handleAceSet, setTotal}){
 
        {card.card === "A" && (
         <div>
-        <button onClick={handleAceSet}>
-          Set ace
+        <button onClick={() => (setAce(ace + 1), setClick(true))}  disabled={click ? true : false}>
+          Add 1
         </button>
-        <button onClick={() => setX(true)}>Add 10</button>
+        <button onClick={() => (setAce(ace + 11), setClick(true))} disabled={click ? true : false}>Add 11</button>
         </div>
     )}
         </div>

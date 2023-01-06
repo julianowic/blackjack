@@ -17,6 +17,7 @@ export default function Home(){
     const [checker,setChecker] = useState(startHandSize);
     const [isStarted, setIsStarted] = useState(false)
     const [aceToSet, setAceToSet] = useState(null)
+    const [ace, setAce] = useState(0)
     
     //var trigger = false; 
 
@@ -24,7 +25,7 @@ export default function Home(){
         setHowManyDealt(startHandSize)
         setStarterDeck(shuffle(deckArray))
         setChecker(0)
-        //setTotal(0)
+        setAce(0)
     }
 
     if(isStarted){
@@ -103,9 +104,10 @@ export default function Home(){
     
     //var total = total1 + userChoice
     useEffect(() => {
-        setTotal(usersCards.reduce((a, e) => a + e.value, 0))
-    }, [usersCards])
+        setTotal(usersCards.reduce((a, e) => a + e.value, 0) + ace)
+    }, [ace, usersCards])
     
+    console.log(total)
 
     return(
         <div>
@@ -122,7 +124,8 @@ export default function Home(){
         {usersCards.map(card => (
             <Card key={card.index}
                 handleAceSet={() => setAceToSet(card)}
-                card={card} setTotal={setTotal}
+                card={card} setTotal={setTotal} total={total}
+                ace={ace} setAce={setAce}
             />
         ))}
           </Fragment>}
