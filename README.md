@@ -1,8 +1,23 @@
-# Getting Started with Create React App
+# Blackjack hand simulation - BBC tech assessment 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Author: Julia Nowicka
 
-## Available Scripts
+## Setup
+
+1. This project is based on [React.JS](https://reactjs.org/)
+2. The main page component can be found under `pages` folder, while all the components can be found under the `components` folder. 
+3. The deck of cards (an array of card objects) used throughout the project can be found under the `utils` folder. 
+4. The function for shuffling the deck of cards can be found under the `hooks` folder.
+
+## Assumptions 
+
+Due to my lack of familiarity with Blackjack, I've decided to only implmenent the rules and scenarios outlined in the Blackjack Candidate Instructions Document. 
+
+- The user can always choose the value of an ace (1 or 11) even if that means that choosing 11 will put them over 21. The option buttons are always displayed.
+- The user always sees their total - when the cards are initially dealt and with each hit. Stand doesn't change anything on the screen. 
+- The solution has to be self-contained, meaning that no APIs or external code have been used. 
+
+## Running and debugging
 
 In the project directory, you can run:
 
@@ -24,47 +39,16 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Future impovements
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Development Side: 
+- Use React Context for state management. 
+- Use an API to generate, shuffle and display cards such as [this](https://www.deckofcardsapi.com/). 
+- Add a dealer, betting, and multiple players. 
+- Add an option for multiple decks. 
 
-### `npm run eject`
+### UI/UX Side: 
+- Make the app responsive for smaller screens. 
+- Add animations when a card is drawn. 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
