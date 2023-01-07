@@ -1,14 +1,5 @@
 export default function Popup({handleSetHigh, handleSetLow}){
    
-//     const handleClick = (points) => {
-//     //total += points
-//     //trigger = false
-//     // setButtonPopup(false)
-//     // setTotal(t => t + points)
-//     // console.log(total + " now")
-
-//    }
-
     return(
         <div className="popup">
             <div className="popup-inner">
@@ -18,6 +9,7 @@ export default function Popup({handleSetHigh, handleSetLow}){
             </div>
         </div>
     )
+    
 }
 
 

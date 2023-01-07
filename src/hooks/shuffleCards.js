@@ -1,5 +1,3 @@
-import Home from '../pages/Home'
-
 export function shuffle(deckArray){
     deckArray = deckArray.slice();
 
