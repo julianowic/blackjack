@@ -1,7 +1,7 @@
 import {useState, useEffect} from 'react'
 
-import Card from '../components/Card';
-import Total from '../components/Total';
+import Card from '../components/Card'
+import Total from '../components/Total'
 
 import {shuffle} from '../hooks/shuffleCards'
 import {deckArray} from '../utils/data'
@@ -34,9 +34,9 @@ export default function Home(){
         <div>
         { 
           <>
-          <button onClick={deal}>DEAL</button>
+          <button data-testid="deal" onClick={deal}>DEAL</button>
 
-            <button disabled={bust} onClick={hit}>HIT</button>
+            <button data-testid="hit" disabled={bust} onClick={hit}>HIT</button>
 
             <button disabled={bust}>STAND</button>
 

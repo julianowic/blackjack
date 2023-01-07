@@ -5,7 +5,7 @@ export default function Total({total}){
        {
          (total > 21) && <h1>Bust!</h1>
        }
-       <h1>Your hand ({total})</h1>
+       <h1 data-testid="hand">Your hand ({total})</h1>
       </div>
     )
 }
