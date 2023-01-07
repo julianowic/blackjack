@@ -1,4 +1,4 @@
-import {useState, useEffect, Fragment} from 'react'
+import {useState, useEffect} from 'react'
 
 import Card from '../components/Card';
 import Total from '../components/Total';
@@ -33,11 +33,14 @@ export default function Home(){
     return(
         <div>
         { 
-          <Fragment>
+          <>
           <button onClick={deal}>DEAL</button>
+
             <button disabled={bust} onClick={hit}>HIT</button>
+
             <button disabled={bust}>STAND</button>
-            <Total total={total} usersCards={usersCards}/> 
+
+            <Total total={total}/> 
 
         {usersCards.map(card => (
             <Card key={card.index}
@@ -45,7 +48,7 @@ export default function Home(){
                 ace={ace} setAce={setAce}
             />
         ))}
-          </Fragment>}
+          </>}
         </div>
     )
 }
