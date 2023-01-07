@@ -1,6 +1,7 @@
 # Blackjack hand simulation - BBC tech assessment 
 
 ### Author: Julia Nowicka
+This project simulates a hand in Blackjack and is my solution to the BBC technical assessment. 
 
 ## Setup
 
@@ -8,6 +9,7 @@
 2. The main page component can be found under `pages` folder, while all the components can be found under the `components` folder. 
 3. The deck of cards (an array of card objects) used throughout the project can be found under the `utils` folder. 
 4. The function for shuffling the deck of cards can be found under the `hooks` folder.
+5. The project uses Eslint for checking common linting errors.
 
 ## Assumptions 
 
@@ -19,30 +21,16 @@ Due to my lack of familiarity with Blackjack, I've decided to only implmenent th
 
 ## Running and debugging
 
-In the project directory, you can run:
+Clone this repo to your desktop and run npm install to install all the dependencies.
 
-### `npm start`
+After you clone this repo to your desktop, go to its root directory and run npm install to install its dependencies.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Once the dependencies are installed, you can run npm start to start the application. You will then be able to access it at localhost:3000
 
 ## Future impovements
 
 ### Development Side: 
-- Use React Context for state management. 
+- Use React Context for state management of things such as the deck and total. 
 - Use an API to generate, shuffle and display cards such as [this](https://www.deckofcardsapi.com/). 
 - Add a dealer, betting, and multiple players. 
 - Add an option for multiple decks. 
