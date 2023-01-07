@@ -1,3 +1,7 @@
+//The array of objects that represents the deck of cards used in the simulation. It is used to determine the colors of the cards, 
+//and it contains a unicode value for each card that is displayed on the screen. The value property is used to obtain the total 
+//the user has at any given point in the game.  
+
 export const deckArray = [
     {
       suits: "Heart",

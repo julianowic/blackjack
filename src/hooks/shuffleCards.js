@@ -1,3 +1,7 @@
+//The shuffle function takes in an array (in this case the array of card objects) and returns a new shuffled array.
+//It uses the Fisher-Yates algorithm for generating a random permutation of a finite sequence, where each permutation is 
+//equally likely. 
+
 export function shuffle(deckArray){
     deckArray = deckArray.slice();
 
