@@ -34,9 +34,11 @@ Once the dependencies are installed, you can run npm start to start the applicat
 - Use an API to generate, shuffle and display cards such as [this](https://www.deckofcardsapi.com/). 
 - Add a dealer, betting, and multiple players. 
 - Add an option for multiple decks. 
+- Improved and exhaustive unit testing. 
 
 ### UI/UX Side: 
 - Make the app responsive for smaller screens. 
 - Add animations when a card is drawn. 
+- Make the app accessible. 
 
 

@@ -2,72 +2,64 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body, html {
+  height: 100%;
+  background-color: #35654d;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Card components styling */
+
+.card{
+  font-size: 180px;
+  position: relative;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  border: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.card-group{
+  padding-top: 4%;
+  display: inline-block;
+  text-align: center;
+}
+
+/* HTT, DEAL and STAND button styling */
+
+.btn-grp{
+  padding-top: 5%;
+}
+
+.btn{
+  margin-right: 20px;
+  margin-left: 20px;
+  background-color: #e7e7e7;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+/* Total h1 styling */
+
+.total-div{
+  padding-top: 3%;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.total-div h1 {
+  font-size: 40px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/* Buttons appearing when user draws an ace */
 
-.card{
-  font-size: 145px;
-}
-
-.popup{
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height:100%;
-  background-color: rgba(0,0,0,0.2);
-  display: flex;
-  justify-content: center;
-  border-radius: 25px;
-  align-items: center;
-}
-
-.popup-inner{
-  position: relative;
-  padding: 32px; 
-  width: 100%;
-  max-width: 640px;
-  background-color: white;
-  border-radius: 25px;
-}
-
-.btn-popup{
-  width:30%;
-  text-align: right;
-}
-
-.btn-popup{
-  display: inline-block;
+.btn-ace{
+  padding: 5px 8px;
+  margin-left: 5px;
+  margin-right: 8px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }

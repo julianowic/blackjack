@@ -48,16 +48,18 @@ export default function Home(){
 
     return(
         <div>
-          <button data-testid="deal" onClick={deal}>DEAL</button>
+          <div className="btn-grp">
+            <button className='btn' data-testid="deal" onClick={deal}>DEAL</button>
 
-            <button data-testid="hit" disabled={bust} onClick={hit}>HIT</button>
+            <button className='btn' data-testid="hit" disabled={bust} onClick={hit}>HIT</button>
 
-            <button disabled={bust}>STAND</button>
+            <button className='btn' disabled={bust}>STAND</button>
+          </div>
 
             <Total total={total}/> 
 
         {usersCards.map(card => (
-            <Card data-testid="cards" key={card.index}
+            <Card data-testid="test-card" key={card.index}
                 card={card} setTotal={setTotal} total={total}
                 ace={ace} setAce={setAce}
             />

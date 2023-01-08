@@ -12,23 +12,28 @@ export default function Card({card, ace, setAce}){
         setClick(true)
     }
 
-    return (
-        <div>
+    return ( 
+        <div className="card-group">
+
+        {/* Conditional render of buttons if the card's an Ace.*/}
+        {card.card === "A" && (
+                <div className='btn-ace-grp'>
+                <button className="btn-ace" onClick={() => (handleClick(1))}  disabled={click ? true : false}>
+                Add 1
+                </button>
+                
+                <button className="btn-ace" onClick={() => (handleClick(11))} disabled={click ? true : false}>Add 11</button>
+                </div>
+            )}
+
+
             <div className="card"
                  style={{color: card.color}} 
             >
             {card.unicode}
             </div>
 
-            {/* Conditional render of buttons if the card's an Ace.*/}
-            {card.card === "A" && (
-                <div>
-                <button onClick={() => (handleClick(1))}  disabled={click ? true : false}>
-                Add 1
-                </button>
-                <button onClick={() => (handleClick(11))} disabled={click ? true : false}>Add 11</button>
-                </div>
-            )}
+            
         </div>
     )
 }

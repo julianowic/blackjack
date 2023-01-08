@@ -1,7 +1,7 @@
 export default function Total({total}){
    
     return (
-      <div>
+      <div className="total-div">
        {
          (total > 21) && <h1>Bust!</h1>
        }
