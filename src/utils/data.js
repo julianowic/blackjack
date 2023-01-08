@@ -6,7 +6,7 @@ export const deckArray = [
     {
       suits: "Heart",
       card: "A",
-      color: "red",
+      color: "#B22222",
       index: "1",
       unicode: "🂱",
       value: 0
@@ -14,7 +14,7 @@ export const deckArray = [
     {
       suits: "Heart",
       card: "2",
-      color: "red",
+      color: "#B22222",
       index: "2",
       unicode: "🂲",
       value: 2
@@ -22,7 +22,7 @@ export const deckArray = [
     {
       suits: "Heart",
       card: "3",
-      color: "red",
+      color: "#B22222",
       index: "3",
       unicode: "🂳",
       value: 3
@@ -30,7 +30,7 @@ export const deckArray = [
     {
       suits: "Heart",
       card: "4",
-      color: "red",
+      color: "#B22222",
       index: "4",
       unicode: "🂴",
       value: 4
@@ -38,7 +38,7 @@ export const deckArray = [
     {
       suits: "Heart",
       card: "5",
-      color: "red",
+      color: "#B22222",
       index: "5",
       unicode: "🂵",
       value: 5
@@ -46,7 +46,7 @@ export const deckArray = [
     {
       suits: "Heart",
       card: "6",
-      color: "red",
+      color: "#B22222",
       index: "6",
       unicode: "🂶",
       value: 6
@@ -54,7 +54,7 @@ export const deckArray = [
     {
       suits: "Heart",
       card: "7",
-      color: "red",
+      color: "#B22222",
       index: "7",
       unicode: "🂷",
       value: 7
@@ -62,7 +62,7 @@ export const deckArray = [
     {
       suits: "Heart",
       card: "8",
-      color: "red",
+      color: "#B22222",
       index: "8",
       unicode: "🂸",
       value: 8
@@ -70,7 +70,7 @@ export const deckArray = [
     {
       suits: "Heart",
       card: "9",
-      color: "red",
+      color: "#B22222",
       index: "9",
       unicode: "🂹",
       value: 9
@@ -78,7 +78,7 @@ export const deckArray = [
     {
       suits: "Heart",
       card: "10",
-      color: "red",
+      color: "#B22222",
       index: "10",
       unicode: "🂺",
       value: 10
@@ -86,7 +86,7 @@ export const deckArray = [
     {
       suits: "Heart",
       card: "J",
-      color: "red",
+      color: "#B22222",
       index: "11",
       unicode: "🂻",
       value: 10
@@ -94,7 +94,7 @@ export const deckArray = [
     {
       suits: "Heart",
       card: "Q",
-      color: "red",
+      color: "#B22222",
       index: "12",
       unicode: "🂽",
       value: 10
@@ -102,7 +102,7 @@ export const deckArray = [
     {
       suits: "Heart",
       card: "K",
-      color: "red",
+      color: "#B22222",
       index: "13",
       unicode: "🂼",
       value: 10
@@ -110,7 +110,7 @@ export const deckArray = [
     {
       suits: "Diamond",
       card: "A",
-      color: "red",
+      color: "#B22222",
       index: "14",
       unicode: "🃁",
       value: 0
@@ -118,7 +118,7 @@ export const deckArray = [
     {
       suits: "Diamond",
       card: "2",
-      color: "red",
+      color: "#B22222",
       index: "15",
       unicode: "🃂",
       value: 2
@@ -126,7 +126,7 @@ export const deckArray = [
     {
       suits: "Diamond",
       card: "3",
-      color: "red",
+      color: "#B22222",
       index: "16",
       unicode: "🃃",
       value: 3
@@ -134,7 +134,7 @@ export const deckArray = [
     {
       suits: "Diamond",
       card: "4",
-      color: "red",
+      color: "#B22222",
       index: "17",
       unicode: "🃄",
       value: 4
@@ -142,7 +142,7 @@ export const deckArray = [
     {
       suits: "Diamond",
       card: "5",
-      color: "red",
+      color: "#B22222",
       index: "18",
       unicode: "🃅",
       value: 5
@@ -150,7 +150,7 @@ export const deckArray = [
     {
       suits: "Diamond",
       card: "6",
-      color: "red",
+      color: "#B22222",
       index: "19",
       unicode: "🃆",
       value: 6
@@ -158,7 +158,7 @@ export const deckArray = [
     {
       suits: "Diamond",
       card: "7",
-      color: "red",
+      color: "#B22222",
       index: "20",
       unicode: "🃇",
       value: 7
@@ -166,7 +166,7 @@ export const deckArray = [
     {
       suits: "Diamond",
       card: "8",
-      color: "red",
+      color: "#B22222",
       index: "21",
       unicode: "🃈",
       value: 8
@@ -174,7 +174,7 @@ export const deckArray = [
     {
       suits: "Diamond",
       card: "9",
-      color: "red",
+      color: "#B22222",
       index: "22",
       unicode: "🃉",
       value: 9
@@ -182,7 +182,7 @@ export const deckArray = [
     {
       suits: "Diamond",
       card: "10",
-      color: "red",
+      color: "#B22222",
       index: "23",
       unicode: "🃊",
       value: 10
@@ -190,7 +190,7 @@ export const deckArray = [
     {
       suits: "Diamond",
       card: "J",
-      color: "red",
+      color: "#B22222",
       index: "24",
       unicode: "🃋",
       value: 10 
@@ -198,7 +198,7 @@ export const deckArray = [
     {
       suits: "Diamond",
       card: "Q",
-      color: "red",
+      color: "#B22222",
       index: "25",
       unicode: "🃍",
       value: 10
@@ -206,7 +206,7 @@ export const deckArray = [
     {
       suits: "Diamond",
       card: "K",
-      color: "red",
+      color: "#B22222",
       index: "26",
       unicode: "🃌",
       value: 10

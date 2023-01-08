@@ -12,9 +12,11 @@ import {deckArray} from '../utils/data'
 
 export default function Home(){
     const startHandSize = 2
-    
+
+    //UseState used to set the initial deck of cards by calling the shuffle() function and passing the deckArray. 
     const [starterDeck, setStarterDeck] = useState(shuffle(deckArray))
     const [howManyDealt, setHowManyDealt] = useState(startHandSize)
+    
     const [total, setTotal] = useState(0)
     const [ace, setAce] = useState(0)
 
@@ -58,8 +60,9 @@ export default function Home(){
 
             <Total total={total}/> 
 
+        {/* The array of cards that have already been drawn by the user are mapped to the <Card/> components with props */}
         {usersCards.map(card => (
-            <Card data-testid="test-card" key={card.index}
+            <Card key={card.index}
                 card={card} setTotal={setTotal} total={total}
                 ace={ace} setAce={setAce}
             />
