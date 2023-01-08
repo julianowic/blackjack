@@ -9,7 +9,7 @@ This project simulates a hand in Blackjack and is my solution to the BBC technic
 2. The main page component can be found under `pages` folder, while all the components can be found under the `components` folder. 
 3. The deck of cards (an array of card objects) used throughout the project can be found under the `utils` folder. 
 4. The function for shuffling the deck of cards can be found under the `hooks` folder.
-5. The project was mostly manually tested with some unit tests written using React testing library and Jest. Tests can be found under THE `App.test.js` file. 
+5. The project was mostly manually tested with some unit tests written using React testing library and Jest. Tests can be found under the `App.test.js` file. 
 
 ## Assumptions 
 
