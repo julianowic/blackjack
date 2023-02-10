@@ -1,7 +1,4 @@
-# Blackjack hand simulation - BBC tech assessment 
-
-### Author: Julia Nowicka
-This project simulates a hand in Blackjack and is my solution to the BBC technical assessment. 
+# Blackjack hand simulation 
 
 ## Setup
 
@@ -10,14 +7,6 @@ This project simulates a hand in Blackjack and is my solution to the BBC technic
 3. The deck of cards (an array of card objects) used throughout the project can be found under the `utils` folder. 
 4. The function for shuffling the deck of cards can be found under the `hooks` folder.
 5. The project was mostly manually tested with some unit tests written using React testing library and Jest. Tests can be found under the `App.test.js` file. 
-
-## Assumptions 
-
-Due to my lack of familiarity with Blackjack, I've decided to only implmenent the rules and scenarios outlined in the Blackjack Candidate Instructions Document. 
-
-- The user can always choose the value of an ace (1 or 11) even if that means that choosing 11 will put them over 21. The option buttons are always displayed.
-- The user always sees their total - when the cards are initially dealt and with each hit. Stand doesn't change anything on the screen. 
-- The solution has to be self-contained, meaning that no APIs or external code have been used. 
 
 ## Running and debugging
 
